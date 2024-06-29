@@ -1,1 +1,136 @@
-/* your code here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product__photo, .product__info {
+    flex: 1;
+    padding: 20px;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-main img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.photo-album ul {
+    display: flex;
+    list-style: none;
+}
+
+.photo-album li {
+    margin: 0 10px;
+}
+
+.photo-album img {
+    max-width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.controls i {
+    font-size: 1.2em;
+    color: #999;
+    cursor: pointer;
+}
+
+.product__info {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.title span {
+    font-size: 1em;
+    color: #999;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.variant h3, .description h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.variant ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.variant li {
+    margin: 0 10px;
+}
+
+.variant img {
+    max-width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.description p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    margin-top: 20px;
+}
+
+.add-to-cart button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.add-to-cart button:hover {
+    background-color: #2980b9;
+}
